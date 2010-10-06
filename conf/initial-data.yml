@@ -11,6 +11,18 @@ User(jeff):
     password:       secret
     fullname:       Jeff    
     
+Tag(play):
+    name:           Play
+ 
+Tag(architecture):
+    name:           Architecture
+ 
+Tag(test):
+    name:           Test
+ 
+Tag(mvc):
+    name:           MVC  
+
 Post(firstBobPost):
     title:          About the model layer
     postedAt:       2009-06-14
@@ -44,6 +56,10 @@ Post(jeffPost):
                     This pattern splits the application into separate layers: the Presentation 
                     layer and the Model layer. The Presentation layer is further split into a 
                     View and a Controller layer.
+    tags:           
+                    - play
+                    - architecture
+                    - mvc
                     
 Comment(c1):
     author:         Guest
