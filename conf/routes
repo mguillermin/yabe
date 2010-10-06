@@ -11,6 +11,9 @@ GET     /post/{id}                              Application.show
 # Post comment
 POST    /posts/{postId}/comments                Application.postComment
 
+# Captcha
+GET     /captcha                                Application.captcha
+
 # Map static resources from the /app/public folder to the /public path
 GET     /public/                                staticDir:public
 
