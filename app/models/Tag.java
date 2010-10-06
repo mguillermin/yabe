@@ -2,6 +2,7 @@ package models;
 
 import play.*;
 import play.db.jpa.*;
+import play.data.validation.*;
 
 import javax.persistence.*;
 import java.util.*;
@@ -9,6 +10,7 @@ import java.util.*;
 @Entity
 public class Tag extends Model implements Comparable<Tag> {
     
+	@Required
 	public String name;
 	
 	private Tag(String name) {

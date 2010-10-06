@@ -15,6 +15,9 @@ POST    /posts/{postId}/comments                Application.postComment
 # Captcha
 GET     /captcha                                Application.captcha
 
+# Import CRUD routes
+*      /admin              module:crud
+
 # Map static resources from the /app/public folder to the /public path
 GET     /public/                                staticDir:public
 
